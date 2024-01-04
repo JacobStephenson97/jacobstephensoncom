@@ -14,13 +14,16 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Header title={SITE_TITLE} />
 		<main>
 			<h1>Welcome To My Site!</h1>
-			<p>
-				This is a simple site built with Astro.
-			</p>
-			<p>
-				More to come in the future, just wanted to get this self hosted :)
-			</p>
-			
+			<p>It's pretty empty right now... but  checkout some projects</p>
+			<ul>
+				<li><a href="https://benny.jacobstephenson.com">
+					My friend Benny's Blog
+				</a></li>
+				<li><a href="https://guildbot.jacobstephenson.com">
+					My Discord Bot
+				</a></li>
+			</ul>
+
 		</main>
 		<Footer />
 	</body>
@@ -28,5 +31,15 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 <style>
 	h1 {
 		text-align: center;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+	li > a:link {
+		background: linear-gradient(to right, red, green);
+		text-decoration: none;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 </style>
