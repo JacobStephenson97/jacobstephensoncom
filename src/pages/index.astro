@@ -14,7 +14,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Header title={SITE_TITLE} />
 		<main>
 			<h1>Welcome To My Site!</h1>
-			<p>It's pretty empty right now... but  checkout some projects</p>
+			<p>It's pretty empty right now... but checkout some projects</p>
 			<ul>
 				<li><a href="https://bennygreeno.com" target="_blank">
 					My friend Benny's Blog
@@ -23,7 +23,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 					My Discord Bot
 				</a></li>
 			</ul>
-
+			<p>
+				The current stack for this site is just <a href="https://astro.build" target="_blank">Astro</a> and <a href="https://vitejs.dev" target="_blank">Vite</a>!
+			</p>
+			<p>Automatically built to a docker image using a github action</p>
+			<p>Pulled and updated on a local server using <a href="https://github.com/containrrr/watchtower" target="_blank">Watchtower</a></p>
 		</main>
 		<Footer />
 	</body>
